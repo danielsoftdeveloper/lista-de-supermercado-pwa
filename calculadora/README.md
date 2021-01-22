@@ -1,4 +1,4 @@
-Meu Primeiro Repositório 
-======================== 
+Este repositório contem uma aplicação de uma calculadora web com Javascript
+============================================================================= 
 
-O Git/GitHub são legais!
+O Git/GitHub é muito legal!
