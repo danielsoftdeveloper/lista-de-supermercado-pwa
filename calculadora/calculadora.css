@@ -1,12 +1,31 @@
-#calculadora .card-header{
-    background-color: rgb(184, 207, 171);
+#calculadora{
+    /* Para fixar o tamanho da calculadora */
+    width: 22rem;
+  
+} 
+
+#calculadora .card-header {
+  background-color: rgb(184, 207, 171);
 }
 
-#calculadora .card-body{
-    background-color: rgb(44, 43, 43);
+#calculadora .card-body {
+  background-color: rgb(44, 43, 43);
 }
 
-button{
-    margin: 4px;
-    width: 50px;
+#calculadora button {
+  margin: 5px;
+  width: 50px;
+}
+
+#calculadora #display {
+  text-align: right;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
+#calculdora .button-texto {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 16pt;
 }
