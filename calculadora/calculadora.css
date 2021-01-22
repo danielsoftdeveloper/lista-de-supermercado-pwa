@@ -1,0 +1,12 @@
+#calculadora .card-header{
+    background-color: rgb(184, 207, 171);
+}
+
+#calculadora .card-body{
+    background-color: rgb(44, 43, 43);
+}
+
+button{
+    margin: 4px;
+    width: 50px;
+}
