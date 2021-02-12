@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 12pt;
+  font-weight: normal;
+  line-height: 1.5rem; /* rem referente a div pai */
+}
+body {
+  /* devido altura da barra fixa */
+  padding-top: 5rem;
+}
+
+.headerBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #1d3a4e;
+  color: #fff;
+  height: 5rem;
+  /* flexbox */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.appName {
+  font-size: 2rem;
+  margin-left: 1rem;
+}
+
+.badge {
+    border: thin solid black;
+    border-radius: 0.75rem;
+    min-width: 1.3rem;
+    text-align: center;
+    background-color: yellow;
+    color: black;
+    margin-right: 1rem;
+}
