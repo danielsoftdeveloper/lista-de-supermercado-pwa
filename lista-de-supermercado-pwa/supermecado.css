@@ -1,4 +1,4 @@
-* { 
+* {
   /* Reset formatações iniciais. */
   margin: 0;
   padding: 0;
@@ -17,8 +17,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #1d3a4e;
-  color: #fff;
   height: 5rem;
   /* flexbox */
   display: flex;
@@ -48,27 +46,107 @@ h3 {
 }
 
 .badge {
-    border: thin solid black;
-    border-radius: 0.75rem;
-    min-width: 1.3rem;
-    text-align: center;
-    background-color: yellow;
-    color: black;
-    margin-right: 1rem;
+  /* border: thin solid black;
+    background-color: #ffd166;
+    color: black; */
+  border-radius: 0.75rem;
+  min-width: 1.3rem;
+  text-align: center;
+
+  margin-right: 1rem;
 }
 
-.mt1{
+/* Cores */
+.primary {
+  color: #fff;
+  background-color: #457b9d;
+  border: thin solid #346a8c;
+}
+
+.primary:active {
+  background-color: #235a8b;
+  border: thin solid #124a7a;
+}
+
+.secondary {
+  color: #000;
+  background-color: #cddfeb;
+  border: thin solid #bcceda;
+}
+
+.secondary:active {
+  background-color: #abbdca;
+  border: thin solid #aaaaca;
+}
+
+.success {
+  color: #fff;
+  background-color: #2a9d8f;
+  border: thin solid #198c7e;
+}
+
+.success:active {
+  background-color: #0a7b6d;
+  border: thin solid #0a6a5c;
+}
+
+.warning {
+  color: #000;
+  background-color: #ffd166;
+  border: thin solid #eec055;
+}
+
+.warning:active {
+  background-color: #ddb844;
+  border: thin solid #cca622;
+}
+
+.danger {
+  color: #fff;
+  background-color: #e63946;
+  border: thin solid #d52835;
+}
+
+.danger:active {
+  background-color: #c41704;
+  border: thin solid #cc1b07;
+}
+
+.light {
+  color: #000;
+  background-color: #a8dadc;
+  border: thin solid #92d2d4;
+}
+
+.light:active {
+  background-color: #a6baca;
+  border: thin solid #a5a2aa;
+}
+
+.dark {
+  color: #fff;
+  background-color: #1d3557;
+  border: thin solid #0c2446;
+}
+
+.dark:active {
+  background-color: #1b1446;
+  border: thin solid #1b1224;
+}
+
+/* classe para espaçamento */
+.mt1 {
   margin-top: 1rem;
 }
 
-.mt2{
+.mt2 {
   margin-top: 2rem;
 }
 
-.mt3{
+.mt3 {
   margin-top: 3rem;
 }
 
-.mt4{
+.mt4 {
   margin-top: 4rem;
 }
