@@ -46,15 +46,67 @@ h3 {
 }
 
 .badge {
-  /* border: thin solid black;
-    background-color: #ffd166;
-    color: black; */
   border-radius: 0.75rem;
   min-width: 1.3rem;
   text-align: center;
-
   margin-right: 1rem;
 }
+
+.btn{
+  height: 3rem;
+  min-width: 3rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  background-color: #edf6f9;
+  border: thin solid #dce5e8;
+  line-height: 1rem;
+  color: #000; 
+}
+
+.btn:active {
+  background-color: #a6baca;
+  border: thin solid #a5a2aa;
+}
+
+.btnGroup{
+  display: flex;
+  flex-direction: row;
+}
+
+.btnGroup .btn{
+  flex: 1;
+  border-radius: 0;
+}
+
+.btnGroup.end{
+  justify-content: flex-end;
+}
+
+.btnGroup .btn.half{
+  flex: 0.5;
+}
+
+.btnGroup .btn.third{
+  flex: 0.33;
+}
+
+.btnGroup .btn.quarter{
+  flex: 0.25;
+}
+
+.btnGroup .btn:first-child{
+  border-radius: 0.35rem 0 0 0.35rem;
+}
+
+
+.btnGroup .btn:last-child{
+  border-radius: 0 0.35rem 0.35rem 0;
+}
+
+.btnGroup .btn:first-child:last-child{
+  border-radius: 0.35rem 0.35rem 0.35rem 0.35rem;
+}
+
 
 /* Cores */
 .primary {
