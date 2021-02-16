@@ -118,6 +118,34 @@ p{
   padding: 1rem;
 }
 
+.navBar {
+  position: fixed;
+  left: 0;
+  /* top: 5rem; */
+  width: 100%;
+  color: #000;
+  background-color: #edf6f9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navBar.fundo{
+  bottom: 0;;
+}
+
+/* navBar que não seja classe fundo */
+.navBar:not(.fundo) ~ *{
+  /* próximo elemento adjacente ou irmão ou mesmo nível de navBar recebe */
+  margin-top: 4rem;
+
+}
+
+.navBar .buttonGroup{
+  flex: 1;
+}
+
 .navBar .button{
   height: 4rem;
 }
