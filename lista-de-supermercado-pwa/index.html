@@ -13,71 +13,82 @@
 <body>
     <header class="headerBar dark">
         <div class="appName">
-            Lista de Supermercado
+            <h1>Lista de Supermercado</h1>
         </div>
         <div class="badge warning">3</div>
     </header>
-    <div style="margin: 1rem;">
+    <nav class="navBar">
+        <div class="buttonGroup">
+        <button id="tab1" class="button active">Texto</button>
+        <button id="tab2" class="button">Botões</button>
+    </div>
+    </nav>
+    <div id="component1" class="component">
+        <h1>Texto</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque dolor vel lectus pulvinar
+            fringilla id a ipsum. Proin vitae sagittis augue. Vestibulum sed magna rutrum, suscipit mauris quis,
+            hendrerit leo. Duis fermentum non purus sit amet tempus. Sed eget faucibus magna. Etiam tincidunt pharetra
+            ex, vel euismod nisi semper sed. Aenean ut nisi vel sem venenatis tempor in varius dui. Mauris gravida
+            gravida elementum. Ut cursus diam metus, fermentum blandit nunc sodales id. Nunc ac lorem magna. Quisque sit
+            amet orci magna.</p>
+        <p>Vestibulum id ante imperdiet, malesuada velit id, commodo elit. In cursus, lectus vel fermentum tincidunt,
+            lorem sapien tristique mauris, eu rhoncus erat lectus nec est. In hac habitasse platea dictumst. Nulla
+            ultricies sit amet diam eu mattis. Nulla scelerisque, dolor pellentesque dignissim convallis, lacus quam
+            iaculis justo, vitae tincidunt nisi nisi et elit. Donec faucibus pharetra metus, sit amet egestas eros
+            ornare et. Aenean elit felis, tincidunt sed faucibus et, aliquam vitae tortor.
 
+        </p>
+        <p>Nunc ullamcorper risus id orci bibendum, vitae fringilla ante pretium. Vestibulum ante ipsum primis in
+            faucibus orci luctus et ultrices posuere cubilia curae; Nullam quis fermentum mi, ut scelerisque dolor.
+            Aliquam convallis mollis velit in venenatis. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora
+            torquent per conubia nostra, per inceptos himenaeos. Sed hendrerit vel quam in consequat. Suspendisse
+            potenti. Mauris tristique purus sed dolor consequat consequat. Donec congue et nisi a facilisis.</p>
+
+        <p>Cras id cursus dui. Maecenas bibendum ullamcorper magna eget molestie. In enim dui, ornare non interdum non,
+            mattis vitae nulla. Aenean ligula lectus, ornare a dapibus at, cursus nec mi. Phasellus finibus vel est et
+            egestas. Phasellus molestie quis nunc sit amet ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. In vitae ultrices turpis, vel rutrum eros. Phasellus gravida enim in molestie placerat. Fusce vitae
+            maximus ligula.</p>
+        <p>Donec rhoncus nec massa at condimentum. Nulla rutrum ligula sit amet velit sollicitudin malesuada sit amet
+            facilisis libero. Donec iaculis neque at posuere condimentum. In scelerisque neque ligula, ut consequat
+            mauris faucibus sed. Aliquam vehicula laoreet ex vitae lobortis. Donec ac metus at lorem tristique feugiat.
+            Vestibulum ullamcorper facilisis lorem.</p>
+    </div>
+    <div id="component2" class="component hidden">
         <h1 class="mt1">Botões agrupados</h1>
-
-        <div class="btnGroup mt1">
-            <button class="btn primary">primary</button>
-            <button class="btn secondary">secondary</button>
-
+        <div class="buttonGroup mt1">
+            <button class="button primary">primary</button>
+            <button class="button secondary">secondary</button>
         </div>
-
-        <div class="btnGroup mt1">
-            <button class="btn success">success</button>
-            <button class="btn warning">warning</button>
-            <button class="btn danger">danger</button>
+        <div class="buttonGroup mt1">
+            <button class="button success">success</button>
+            <button class="button warning">warning</button>
+            <button class="button danger">danger</button>
         </div>
-
-        <div class="btnGroup mt1">
-            <button class="btn light">light</button>
-            <button class="btn dark">dark</button>
+        <div class="buttonGroup mt1">
+            <button class="button light">light</button>
+            <button class="button dark">dark</button>
         </div>
-
         <h1 class="mt1">Botões a direita</h1>
-        <div class="btnGroup end mt1">
-            <button class="btn primary quarter">OK</button>
-            <button class="btn light quarter">Cancelar</button>
-
+        <div class="buttonGroup end mt1">
+            <button class="button primary quarter">OK</button>
+            <button class="button light quarter">Cancelar</button>
         </div>
-
         <h2 class="mt1">Botões porcentagem da tela</h2>
-        <div class="btnGroup mt1">
-            <button class="btn primary">OK(100%)</button>
+        <div class="buttonGroup mt1">
+            <button class="button primary">OK(100%)</button>
 
         </div>
-
-        <div class="btnGroup mt1">
-            <button class="btn primary half">OK(50%)</button>
-
+        <div class="buttonGroup mt1">
+            <button class="button primary half">OK(50%)</button>
+        </div>
+        <div class="buttonGroup mt1">
+            <button class="button primary third">OK(33%)</button>
+        </div>
+        <div class="buttonGroup mt1">
+            <button class="button primary quarter">OK(25%)</button>
         </div>
 
-
-        <div class="btnGroup mt1">
-            <button class="btn primary third">OK(33%)</button>
-
-        </div>
-
-
-        <div class="btnGroup mt1">
-            <button class="btn primary quarter">OK(25%)</button>
-
-        </div>
-
-        
-        <h2 class="mt1">Conteúdo da aplicação</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, non.</p>
-        <p class="primary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, soluta.</p>
-        <p class="secondary">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, ipsum.</p>
-        <p class="light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nobis.</p>
-        <p class="dark">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nobis.</p>
-        <p class="warning">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nobis.</p>
-        <p class="success">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi, nobis.</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam, non.</p>
     </div>
 </body>
 
