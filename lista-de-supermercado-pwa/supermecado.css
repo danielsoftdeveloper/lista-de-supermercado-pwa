@@ -2,7 +2,7 @@
   /* Reset formatações iniciais. */
   margin: 0;
   padding: 0;
-  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 12pt;
   font-weight: normal;
   line-height: 1.5rem; /* rem referente a div pai */
@@ -43,7 +43,7 @@ h3 {
   margin-top: 1rem;
 }
 
-p{
+p {
   margin-top: 1rem;
   text-align: justify;
 }
@@ -60,7 +60,7 @@ p{
   margin-right: 1rem;
 }
 
-.button{
+.button {
   height: 3rem;
   min-width: 3rem;
   padding: 0.25rem 0.75rem;
@@ -68,7 +68,7 @@ p{
   background-color: #edf6f9;
   border: thin solid #dce5e8;
   line-height: 1rem;
-  color: #000; 
+  color: #000;
 }
 
 .button:active {
@@ -76,45 +76,45 @@ p{
   border: thin solid #a5a2aa;
 }
 
-.buttonGroup{
+.buttonGroup {
   display: flex;
   flex-direction: row;
 }
 
-.buttonGroup .button{
+.buttonGroup .button {
   flex: 1;
   border-radius: 0;
 }
 
-.buttonGroup.end{
+.buttonGroup.end {
   justify-content: flex-end;
 }
 
-.buttonGroup .button.half{
+.buttonGroup .button.half {
   flex: 0.5;
 }
 
-.buttonGroup .button.third{
+.buttonGroup .button.third {
   flex: 0.33;
 }
 
-.buttonGroup .button.quarter{
+.buttonGroup .button.quarter {
   flex: 0.25;
 }
 
-.buttonGroup .button:first-child{
+.buttonGroup .button:first-child {
   border-radius: 0.35rem 0 0 0.35rem;
 }
 
-.buttonGroup .button:last-child{
+.buttonGroup .button:last-child {
   border-radius: 0 0.35rem 0.35rem 0;
 }
 
-.buttonGroup .button:first-child:last-child{
+.buttonGroup .button:first-child:last-child {
   border-radius: 0.35rem 0.35rem 0.35rem 0.35rem;
 }
 
-.component{
+.component {
   padding: 1rem;
 }
 
@@ -131,46 +131,95 @@ p{
   align-items: center;
 }
 
-.navBar.fundo{
-  bottom: 0;;
+.navBar.fundo {
+  bottom: 0;
 }
 
 /* navBar que não seja classe fundo */
-.navBar:not(.fundo) ~ *{
+.navBar:not(.fundo) ~ * {
   /* próximo elemento adjacente ou irmão ou mesmo nível de navBar recebe */
   margin-top: 4rem;
-
 }
 
-.navBar .buttonGroup{
+.navBar .buttonGroup {
   flex: 1;
 }
 
-.navBar .button{
+.navBar .button {
   height: 4rem;
 }
 
 .navBar .buttonGroup .button:first-child,
-.navBar .buttonGroup .button:last-child{
+.navBar .buttonGroup .button:last-child {
   /* Anular efeito bordas nos botões de navegação */
   border-radius: 0;
 }
 
-.hidden{
+.hidden {
   display: none;
+}
+
+.field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.field label {
+  margin-right: 1rem;
+}
+
+.field label.fixed{
+  width: 5rem;
+} 
+
+/* .field label.half {
+  flex: 1;
+}
+
+.field label.third {
+  flex: 0.5rem;
+}
+
+.field label.quater {
+  flex: 0.33rem; // 0.33 +1.00 (input) =1.33 /4 = 0.33 
+}
+
+.field label.fifth {
+  flex: 0.25rem;
+} */
+
+.field input {
+  flex: 1;
+  height: 2rem;
+  padding: 0.3rem 0.7rem;
+  color: #000;
+  background-color: #fff;
+  border: thin solid #a8dadc;
+  border-radius: 0.35rem;
+}
+
+.field input.valid {
+  border: thin solid #2a9d8f;
+}
+
+.field input.invalid {
+  border: thin solid #ef233c;
 }
 
 /* Cores */
 .active {
-  color: #fff;
-  background-color: #457b9d;
-  border: thin solid #346a8c;
+  color: #000;
+  background-color: #a8dadc;
+  border: thin solid #92d2d4;
 }
 
 .active:active {
   background-color: #235a8b;
   border: thin solid #124a7a;
 }
+
 .primary {
   color: #fff;
   background-color: #457b9d;

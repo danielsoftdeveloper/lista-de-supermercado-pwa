@@ -17,13 +17,14 @@
         </div>
         <div class="badge warning">3</div>
     </header>
-    <nav class="navBar fundo">
+    <nav class="navBar">
         <div class="buttonGroup">
-        <button id="tab1" class="button active">Texto</button>
-        <button id="tab2" class="button">Botões</button>
-    </div>
+            <button id="tab1" class="button">Texto</button>
+            <button id="tab2" class="button">Botões</button>
+            <button id="tab3" class="button active">Elemento</button>
+        </div>
     </nav>
-    <div id="componente1" class="component">
+    <div id="componente1" class="component hidden">
         <h1>Texto</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque dolor vel lectus pulvinar
             fringilla id a ipsum. Proin vitae sagittis augue. Vestibulum sed magna rutrum, suscipit mauris quis,
@@ -87,6 +88,27 @@
         </div>
         <div class="buttonGroup mt1">
             <button class="button primary quarter">OK(25%)</button>
+        </div>
+
+    </div>
+
+    <div id="componente3" class="component">
+        <h1>Formulário</h1>
+        <div class="field mt1">
+            <label class="fixed">Nome</label>
+            <input type="text" autocomplete="off">
+        </div>
+        <div class="field mt1">
+            <label class="fixed">Sobrenome</label>
+            <input class="valid" type="text" autocomplete="off">
+        </div>
+        <div class="field mt1">
+            <label class="fixed">Senha</label>
+            <input class="invalid" type="password" autocomplete="off">
+        </div>
+
+        <div class="buttonGroup end mt1">
+            <button class="button primary quarter">Ok</button>
         </div>
 
     </div>
