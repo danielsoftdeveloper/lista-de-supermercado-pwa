@@ -1,11 +1,13 @@
 let telas = ['componente1, componente2, componente3, componente4'];
 
 const mostra = (comp) => {
+  let i = false;
   telas.forEach((c) => {
-    /* esconde os dois componentes */
-    /* console.log('entrou'); */
+    //esconde os dois componentes
+
     document.querySelector('#' + c).classList.add('hidden');
   });
+
   document.querySelector('#' + comp).classList.remove('hidden');
 };
 
