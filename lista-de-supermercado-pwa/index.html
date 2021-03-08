@@ -19,11 +19,11 @@
     </header>
     <nav class="navBar">
         <div class="buttonGroup">
-            <button id="tab1" class="button active">Texto</button>
-            <button id="tab2" class="button">Botões</button>
-            <button id="tab3" class="button">Formulário</button>
-            <button id="tab4" class="button">Lista</button>
-          
+            <button id="tab1" class="button active">Regras</button>
+            <button id="tab2" class="button">Login</button>
+            <button id="tab3" class="button">Lista Elmentos</button>
+            <button id="tab4" class="button">Botões</button>
+
         </div>
     </nav>
     <div id="componente1" class="component">
@@ -52,12 +52,58 @@
             egestas. Phasellus molestie quis nunc sit amet ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. In vitae ultrices turpis, vel rutrum eros. Phasellus gravida enim in molestie placerat. Fusce vitae
             maximus ligula.</p>
-        <p>Donec rhoncus nec massa at condimentum. Nulla rutrum ligula sit amet velit sollicitudin malesuada sit amet
-            facilisis libero. Donec iaculis neque at posuere condimentum. In scelerisque neque ligula, ut consequat
-            mauris faucibus sed. Aliquam vehicula laoreet ex vitae lobortis. Donec ac metus at lorem tristique feugiat.
-            Vestibulum ullamcorper facilisis lorem.</p>
+
     </div>
     <div id="componente2" class="component hidden">
+        <h1>Formulário</h1>
+        <div class="field mt1">
+            <label class="fixed">Nome</label>
+            <input type="text" autocomplete="off" required>
+        </div>
+        <div class="field mt1">
+            <label class="fixed">Sobrenome</label>
+            <input class="valid" type="text" autocomplete="off">
+        </div>
+        <div class="field mt1">
+            <label class="fixed">Senha</label>
+            <input class="invalid" type="password" autocomplete="off">
+        </div>
+
+        <div class="buttonGroup end mt1">
+            <button class="button primary quarter" onclick="mostraItens()">Ok</button>
+        </div>
+
+    </div>
+    <div id="componente3" class="component hidden">
+        <h1>Lista de Itens</h1>
+        <!-- Botões de controle -->
+        <div id="myBtnContainer">
+            <button class="btn active" onclick="filterSelection('all')"> Mostrar Todos</button>
+            <button class="btn" onclick="filterSelection('cars')"> Carros</button>
+            <button class="btn" onclick="filterSelection('animals')"> Animais</button>
+            <button class="btn" onclick="filterSelection('fruits')"> Frutas</button>
+            <button class="btn" onclick="filterSelection('colors')"> Colores</button>
+        </div>
+
+        <!--Os elementos filtráveis. Observe que alguns têm vários nomes de classe (isso pode ser usado se pertencerem a várias categorias)  -->
+        <div class="container">
+            <div class="filterDiv cars">BMW</div>
+            <div class="filterDiv colors fruits">Orange</div>
+            <div class="filterDiv cars">Volvo</div>
+            <div class="filterDiv colors">Red</div>
+            <div class="filterDiv cars animals">Mustang</div>
+            <div class="filterDiv colors">Blue</div>
+            <div class="filterDiv animals">Cat</div>
+            <div class="filterDiv animals">Dog</div>
+            <div class="filterDiv fruits">Melon</div>
+            <div class="filterDiv fruits animals">Kiwi</div>
+            <div class="filterDiv fruits">Banana</div>
+            <div class="filterDiv fruits">Lemon</div>
+            <div class="filterDiv animals">Cow</div>
+        </div>
+    </div>
+
+    <div id="componente4" class="component hidden">
         <h1 class="mt1">Botões agrupados</h1>
         <div class="buttonGroup mt1">
             <button class="button primary">primary</button>
@@ -94,37 +140,7 @@
 
     </div>
 
-    <div id="componente3" class="component hidden">
-        <h1>Formulário</h1>
-        <div class="field mt1">
-            <label class="fixed">Nome</label>
-            <input type="text" autocomplete="off">
-        </div>
-        <div class="field mt1">
-            <label class="fixed">Sobrenome</label>
-            <input class="valid" type="text" autocomplete="off">
-        </div>
-        <div class="field mt1">
-            <label class="fixed">Senha</label>
-            <input class="invalid" type="password" autocomplete="off">
-        </div>
 
-        <div class="buttonGroup end mt1">
-            <button class="button primary quarter">Ok</button>
-        </div>
-
-    </div>
-
-    <div id="componente4" class="component hidden">
-        <h1>Lista</h1>
-        <ul class="list mt1">
-            <li>Item 1 </li>
-            <li class="active">Item 2</li>
-            <li>Item 3</li>
-            <li>Item 4</li>
-            <li>Item 4</li>
-        </ul>
-    </div>
 </body>
 
 </html>
