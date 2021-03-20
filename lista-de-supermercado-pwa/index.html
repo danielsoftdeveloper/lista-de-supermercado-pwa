@@ -19,127 +19,72 @@
     </header>
     <nav class="navBar">
         <div class="buttonGroup">
-            <button id="tab1" class="button active">Regras</button>
-            <button id="tab2" class="button">Login</button>
-            <button id="tab3" class="button">Lista Elmentos</button>
-            <button id="tab4" class="button">Botões</button>
-
+            <button id="tab1" class="button active">Cadastro / Login</button>
+            <button id="tab2" class="button">Lista de Compras</button>
         </div>
     </nav>
-    <div id="componente1" class="component">
-        <h1>Texto</h1>
+    <div id="componente1" class="component ">
+        <h1>Cadastro</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pellentesque dolor vel lectus pulvinar
             fringilla id a ipsum. Proin vitae sagittis augue. Vestibulum sed magna rutrum, suscipit mauris quis,
             hendrerit leo. Duis fermentum non purus sit amet tempus. Sed eget faucibus magna. Etiam tincidunt pharetra
             ex, vel euismod nisi semper sed. Aenean ut nisi vel sem venenatis tempor in varius dui. Mauris gravida
             gravida elementum. Ut cursus diam metus, fermentum blandit nunc sodales id. Nunc ac lorem magna. Quisque sit
             amet orci magna.</p>
-        <p>Vestibulum id ante imperdiet, malesuada velit id, commodo elit. In cursus, lectus vel fermentum tincidunt,
-            lorem sapien tristique mauris, eu rhoncus erat lectus nec est. In hac habitasse platea dictumst. Nulla
-            ultricies sit amet diam eu mattis. Nulla scelerisque, dolor pellentesque dignissim convallis, lacus quam
-            iaculis justo, vitae tincidunt nisi nisi et elit. Donec faucibus pharetra metus, sit amet egestas eros
-            ornare et. Aenean elit felis, tincidunt sed faucibus et, aliquam vitae tortor.
 
-        </p>
-        <p>Nunc ullamcorper risus id orci bibendum, vitae fringilla ante pretium. Vestibulum ante ipsum primis in
-            faucibus orci luctus et ultrices posuere cubilia curae; Nullam quis fermentum mi, ut scelerisque dolor.
-            Aliquam convallis mollis velit in venenatis. Aliquam erat volutpat. Class aptent taciti sociosqu ad litora
-            torquent per conubia nostra, per inceptos himenaeos. Sed hendrerit vel quam in consequat. Suspendisse
-            potenti. Mauris tristique purus sed dolor consequat consequat. Donec congue et nisi a facilisis.</p>
+        <div>
+            <div class="buttonGroup mt1">
+                <button class="button primary">Cadastro</button>
+            </div>
 
-        <p>Cras id cursus dui. Maecenas bibendum ullamcorper magna eget molestie. In enim dui, ornare non interdum non,
-            mattis vitae nulla. Aenean ligula lectus, ornare a dapibus at, cursus nec mi. Phasellus finibus vel est et
-            egestas. Phasellus molestie quis nunc sit amet ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. In vitae ultrices turpis, vel rutrum eros. Phasellus gravida enim in molestie placerat. Fusce vitae
-            maximus ligula.</p>
+            <div class="field mt1">
+                <label class="fixed">Usuário</label>
+                <input type="text" autocomplete="off" required>
+            </div>
+
+            <div class="field mt1">
+                <label class="fixed">Senha</label>
+                <input class="invalid" type="password" autocomplete="off">
+            </div>
+
+            <div class="buttonGroup end mt1">
+                <button class="button primary half" onclick="mostraItens()">Ok</button>
+            </div>
+
+        </div>
+
 
     </div>
+
     <div id="componente2" class="component hidden">
-        <h1>Formulário</h1>
-        <div class="field mt1">
-            <label class="fixed">Nome</label>
-            <input type="text" autocomplete="off" required>
-        </div>
-        <div class="field mt1">
-            <label class="fixed">Sobrenome</label>
-            <input class="valid" type="text" autocomplete="off">
-        </div>
-        <div class="field mt1">
-            <label class="fixed">Senha</label>
-            <input class="invalid" type="password" autocomplete="off">
-        </div>
-
-        <div class="buttonGroup end mt1">
-            <button class="button primary quarter" onclick="mostraItens()">Ok</button>
-        </div>
-
-    </div>
-    <div id="componente3" class="component hidden">
         <h1>Lista de Itens</h1>
         <!-- Botões de controle -->
         <div id="myBtnContainer">
             <button class="btn active" onclick="filterSelection('all')"> Mostrar Todos</button>
-            <button class="btn" onclick="filterSelection('cars')"> Carros</button>
-            <button class="btn" onclick="filterSelection('animals')"> Animais</button>
-            <button class="btn" onclick="filterSelection('fruits')"> Frutas</button>
-            <button class="btn" onclick="filterSelection('colors')"> Colores</button>
+            <button class="btn" onclick="filterSelection('frutas')"> Frutas</button>
+            <button class="btn" onclick="filterSelection('verduras')"> Verduras</button>
+            <button class="btn" onclick="filterSelection('carnes')"> Carnes</button>
+            <button class="btn" onclick="filterSelection('limpeza')"> Produtos Limpeza</button>
+            <button class="btn" onclick="filterSelection('itens')">Itens Básicos</button>
         </div>
 
         <!--Os elementos filtráveis. Observe que alguns têm vários nomes de classe (isso pode ser usado se pertencerem a várias categorias)  -->
         <div class="container">
-            <div class="filterDiv cars">BMW</div>
-            <div class="filterDiv colors fruits">Orange</div>
-            <div class="filterDiv cars">Volvo</div>
-            <div class="filterDiv colors">Red</div>
-            <div class="filterDiv cars animals">Mustang</div>
-            <div class="filterDiv colors">Blue</div>
-            <div class="filterDiv animals">Cat</div>
-            <div class="filterDiv animals">Dog</div>
-            <div class="filterDiv fruits">Melon</div>
-            <div class="filterDiv fruits animals">Kiwi</div>
-            <div class="filterDiv fruits">Banana</div>
-            <div class="filterDiv fruits">Lemon</div>
-            <div class="filterDiv animals">Cow</div>
+            <div class="filterDiv itens">Feijão</div>
+            <div class="filterDiv itens">Arroz</div>
+            <div class="filterDiv limpeza">Sabão em pó</div>
+            <div class="filterDiv verduras">Couve</div>
+            <div class="filterDiv verduras">Alface</div>
+            <div class="filterDiv limpeza">Detergente</div>
+            <div class="filterDiv carnes">Frango</div>
+            <div class="filterDiv carnes">Peixe</div>
+            <div class="filterDiv frutas">Melão</div>
+            <div class="filterDiv frutas">Kiwi</div>
+            <div class="filterDiv frutas">Banana</div>
+            <div class="filterDiv frutas">Limão</div>
+            <div class="filterDiv carnes">Carne de Boi</div>
         </div>
     </div>
-
-    <div id="componente4" class="component hidden">
-        <h1 class="mt1">Botões agrupados</h1>
-        <div class="buttonGroup mt1">
-            <button class="button primary">primary</button>
-            <button class="button secondary">secondary</button>
-        </div>
-        <div class="buttonGroup mt1">
-            <button class="button success">success</button>
-            <button class="button warning">warning</button>
-            <button class="button danger">danger</button>
-        </div>
-        <div class="buttonGroup mt1">
-            <button class="button light">light</button>
-            <button class="button dark">dark</button>
-        </div>
-        <h1 class="mt1">Botões a direita</h1>
-        <div class="buttonGroup end mt1">
-            <button class="button primary quarter">OK</button>
-            <button class="button light quarter">Cancelar</button>
-        </div>
-        <h2 class="mt1">Botões porcentagem da tela</h2>
-        <div class="buttonGroup mt1">
-            <button class="button primary">OK(100%)</button>
-
-        </div>
-        <div class="buttonGroup mt1">
-            <button class="button primary half">OK(50%)</button>
-        </div>
-        <div class="buttonGroup mt1">
-            <button class="button primary third">OK(33%)</button>
-        </div>
-        <div class="buttonGroup mt1">
-            <button class="button primary quarter">OK(25%)</button>
-        </div>
-
-    </div>
-
 
 </body>
 
